@@ -1,0 +1,79 @@
+GLPSOL: GLPK LP/MIP Solver, v4.63
+Parameter(s) specified in the command line:
+ --cover --clique --gomory --mir -m tsp.mod
+Reading model section from tsp.mod...
+Reading data section from tsp.mod...
+335 lines were read
+Generating total...
+Generating leave...
+Generating enter...
+Generating cap...
+Generating node...
+Model has been successfully generated
+GLPK Integer Optimizer, v4.63
+289 rows, 480 columns, 1680 non-zeros
+240 integer variables, all of which are binary
+Preprocessing...
+288 rows, 480 columns, 1440 non-zeros
+240 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.500e+01  ratio =  1.500e+01
+GM: min|aij| =  9.586e-01  max|aij| =  1.043e+00  ratio =  1.088e+00
+EQ: min|aij| =  9.189e-01  max|aij| =  1.000e+00  ratio =  1.088e+00
+2N: min|aij| =  9.375e-01  max|aij| =  1.000e+00  ratio =  1.067e+00
+Constructing initial basis...
+Size of triangular part is 286
+Solving LP relaxation...
+GLPK Simplex Optimizer, v4.63
+288 rows, 480 columns, 1440 non-zeros
+      0: obj =   7.854000000e+03 inf =   2.575e+02 (6)
+     75: obj =   1.005693333e+04 inf =   1.943e-15 (0)
+*   199: obj =   6.029733333e+03 inf =   6.026e-15 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Gomory's cuts enabled
+MIR cuts enabled
+Cover cuts enabled
+Clique cuts enabled
+Constructing conflict graph...
+Conflict graph has 240 + 0 = 240 vertices
++   199: mip =     not found yet >=              -inf        (1; 0)
+Cuts on level 0: gmi = 7; mir = 48;
+Cuts on level 4: gmi = 7; mir = 48;
++  4432: >>>>>   7.053000000e+03 >=   6.528000000e+03   7.4% (5; 0)
+Cuts on level 60: gmi = 19; mir = 64;
++ 16235: >>>>>   7.018000000e+03 >=   6.573000000e+03   6.3% (112; 18)
+Cuts on level 8: gmi = 12; mir = 62;
++ 19170: >>>>>   6.913000000e+03 >=   6.579000000e+03   4.8% (118; 59)
+Cuts on level 41: gmi = 22; mir = 64;
++ 23042: >>>>>   6.890000000e+03 >=   6.607000000e+03   4.1% (91; 120)
+Cuts on level 53: gmi = 26; mir = 75;
++ 43757: >>>>>   6.870000000e+03 >=   6.717000000e+03   2.2% (199; 237)
+Cuts on level 54: gmi = 38; mir = 86;
++ 57072: >>>>>   6.865000000e+03 >=   6.771000000e+03   1.4% (196; 374)
+Cuts on level 43: gmi = 35; mir = 63;
++ 63509: >>>>>   6.859000000e+03 >=   6.808000000e+03   0.7% (197; 502)
++ 67843: mip =   6.859000000e+03 >=     tree is empty   0.0% (0; 1273)
+INTEGER OPTIMAL SOLUTION FOUND
+Time used:   13.0 secs
+Memory used: 5.6 Mb (5879332 bytes)
+Optimal tour has length 6859
+From node   To node   Distance
+        1        14        479
+        2         4        474
+        3         2        126
+        4         8        271
+        5        11       1504
+        6        15        308
+        7         6        115
+        8         1         60
+        9        10        328
+       10        16        610
+       11         9       1387
+       12         7        177
+       13        12         68
+       14        13         52
+       15         5        401
+       16         3        499
+Model has been successfully processed
+>Exit code: 0    Time: 13.260
