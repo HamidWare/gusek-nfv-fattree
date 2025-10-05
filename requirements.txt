@@ -1,1 +1,1 @@
-**GLPK** (with Gusek on Windows, or native GLPK on any OS)
+GLPK (with Gusek on Windows, or native GLPK on any OS)
